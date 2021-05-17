@@ -1,0 +1,68 @@
+/* Global styles */
+
+:root {
+	--primary: #826eff;
+	--secondary: #c2c2c2;
+	--body-background: #f3f3f3;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-family: sans-serif;
+	background-color: var(--body-background);
+	padding: 1em;
+}
+
+.container {
+	text-align: center;
+}
+
+.container p {
+	font-size: 2rem;
+	font-weight: lighter;
+	margin-bottom: 1em;
+}
+
+/* Checkbox styles */
+.checkbox {
+	appearance: none;
+	height: 2em;
+	width: 4em;
+	background-color: var(--secondary);
+	outline: none;
+	cursor: pointer;
+	border-radius: 1em;
+	position: relative;
+	transition: background-color 0.3s ease;
+}
+
+.checkbox::before {
+	content: '';
+	height: 100%;
+	width: 50%;
+	background-color: white;
+	position: absolute;
+	right: 50%;
+	border-radius: 50%;
+	border: var(--secondary) solid 0.2em;
+	transition: right 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox:checked {
+	background-color: var(--primary);
+}
+
+.checkbox:checked::before {
+	border-color: var(--primary);
+	right: 0;
+}
