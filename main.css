@@ -1,9 +1,12 @@
 /* Global styles */
 
 :root {
+	/* Colors */
 	--primary: #826eff;
 	--secondary: #c2c2c2;
 	--body-background: #f3f3f3;
+	--shadow: #0001;
+	--white: #fff;
 }
 
 *,
@@ -31,15 +34,20 @@ body {
 	font-size: 2rem;
 	font-weight: lighter;
 	margin-bottom: 1em;
+	background-color: var(--white);
+	padding: 0.3em;
+	box-shadow: 0.1em 0.1em 0.3em var(--shadow);
+	border-radius: 0.2em;
 }
 
 /* Checkbox styles */
+
 .checkbox {
 	appearance: none;
 	height: 2em;
 	width: 4em;
 	background-color: var(--secondary);
-	outline: none;
+	/* outline: none; */
 	cursor: pointer;
 	border-radius: 1em;
 	position: relative;
