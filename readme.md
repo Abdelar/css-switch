@@ -1,0 +1,3 @@
+# A custom checkbox
+
+I tried to mimic the checkbox from Material Design using CSS...
