@@ -40,9 +40,9 @@ body {
 	border-radius: 0.2em;
 }
 
-/* Checkbox styles */
+/* Switch styles */
 
-.checkbox {
+.switch {
 	appearance: none;
 	height: 2em;
 	width: 4em;
@@ -54,7 +54,7 @@ body {
 	transition: background-color 0.3s ease;
 }
 
-.checkbox::before {
+.switch::before {
 	content: '';
 	height: 100%;
 	width: 50%;
@@ -65,17 +65,17 @@ body {
 	transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.checkbox:checked {
+.switch:checked {
 	background-color: var(--primary);
 }
 
-.checkbox:checked::before {
+.switch:checked::before {
 	border-color: var(--primary);
 	transform: translateX(100%);
 }
 
 @media screen and (max-width: 500px) {
-	.checkbox {
+	.switch {
 		outline: none;
 	}
 }
