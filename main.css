@@ -73,9 +73,3 @@ body {
 	border-color: var(--primary);
 	transform: translateX(100%);
 }
-
-@media screen and (max-width: 500px) {
-	.switch {
-		outline: none;
-	}
-}
